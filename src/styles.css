@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+.header {
+    background-color: #CF0202;
+    padding: 10px;
+    align-items: center;
+    border-radius: 18px; /* Rounded edges */
+}
+
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.25rem;
+  font-weight: 500;
+  height: 60px;
+}
+
+.header-logo-text {
+  color: #fff;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding-left: 20px;
+}
