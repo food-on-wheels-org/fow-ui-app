@@ -5,17 +5,19 @@
     border-radius: 18px; /* Rounded edges */
 }
 
-
 .header-container {
   display: flex;
   justify-content: space-between;
   font-size: 1.25rem;
   font-weight: 500;
-  height: 60px;
 }
 
 .header-logo-text {
   color: #fff;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   padding-left: 20px;
+}
+
+.header-logo-image {
+  padding-top: 10px;
 }

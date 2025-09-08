@@ -1,0 +1,1 @@
+export const API_URL_RLIST = 'http://localhost:9091';

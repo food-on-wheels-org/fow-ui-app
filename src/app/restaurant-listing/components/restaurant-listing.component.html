@@ -1,0 +1,15 @@
+<div class="main-content">
+    <div class="restaurant-grid">
+        <div class="restaurant-card" *ngFor="let restaurant of restaurantList">
+            <div class="restaurant-image">
+                <img [src]="'assets/restaurant-images/' + getRandomImage()">
+            </div>
+            <div class="restaurant-info">
+                <h3 class="restaurant-name">{{ restaurant.name }}</h3>
+                <p class="restaurant-description">{{ restaurant.restaurantDescription }}</p>
+                <button class="order-button" (click)="onButtonClick(restaurant.id)">Order</button>
+            </div>
+        </div>
+    </div>
+</div>
+
