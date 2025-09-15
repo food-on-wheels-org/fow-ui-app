@@ -1,0 +1,104 @@
+.restaurant-details {
+	max-width: 700px;
+	margin: 32px auto;
+	background: #fff;
+	border-radius: 16px;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+	padding: 32px 24px;
+}
+
+.restaurant-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 12px;
+}
+
+.restaurant-header h1 {
+	font-size: 2rem;
+	color: #CF0202;
+	margin: 0;
+}
+
+.checkout-button {
+	background: #CF0202;
+	color: #fff;
+	border: none;
+	border-radius: 8px;
+	padding: 10px 24px;
+	font-size: 1rem;
+	font-weight: 500;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	transition: background 0.2s;
+}
+.checkout-button:hover {
+	background: #a80101;
+}
+
+.restaurant-details p {
+	font-size: 1.1rem;
+	color: #444;
+	margin-bottom: 24px;
+}
+
+.food-list {
+	display: flex;
+	flex-direction: column;
+	gap: 18px;
+}
+
+.food-item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #f8f8f8;
+	border-radius: 10px;
+	padding: 16px 18px;
+	box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+
+.item-details {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+}
+.item-name {
+	font-size: 1.15rem;
+	font-weight: 500;
+	color: #222;
+}
+.item-price {
+	font-size: 1rem;
+	color: #CF0202;
+}
+
+.food-quantity {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+.decrement-button, .increment-button {
+	background: #CF0202;
+	color: #fff;
+	border: none;
+	border-radius: 50%;
+	width: 32px;
+	height: 32px;
+	font-size: 1.2rem;
+	font-weight: 600;
+	cursor: pointer;
+	transition: background 0.2s;
+}
+.decrement-button:hover, .increment-button:hover {
+	background: #a80101;
+}
+.quantity-label {
+	min-width: 24px;
+	text-align: center;
+	font-size: 1.1rem;
+	font-weight: 500;
+	color: #222;
+}
