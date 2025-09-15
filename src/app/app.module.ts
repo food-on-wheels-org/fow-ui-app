@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HeaderModule } from './header/header.module';
 import { RestaurantListingModule } from './restaurant-listing/restaurant-listing.module';
 import { HttpClientModule } from '@angular/common/http';
+import { MenuDirectoryModule } from './menu-directory/menu-directory.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     HeaderModule,
     RestaurantListingModule,
-    HttpClientModule
+    HttpClientModule,
+    MenuDirectoryModule
   ],
   providers: [],
   bootstrap: [AppComponent]

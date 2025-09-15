@@ -1,0 +1,26 @@
+<div class="restaurant-details">
+    <div class="restaurant-header">
+        <h1>{{menuItemResponse.restaurantListing?.name}}</h1>
+        <button class="checkout-button" (click)="onCheckOut()">
+            <i class="fas fa-shopping-cart"></i>
+            Checkout
+        </button>
+    </div>
+    <p>{{menuItemResponse.restaurantListing?.restaurantDescription}}</p>
+
+    <h2>Menu</h2>
+    <div class="food-list">
+        <div class="food-item" *ngFor="let item of menuItemResponse.menuItemList">
+            <div class="item-details">
+                <div class="item-name">{{item.dishName}}</div>
+                <div class="item-price">$ {{item.price}}</div>
+            </div>
+            <div class="food-quantity">
+                <button class="decrement-button" *ngIf="item.quantity" (click)="decrement(item)">-</button>
+                <div class="quantity-label">{{item.quantity}}</div>
+                <button class="increment-button" (click)="increment(item)">+</button>
+            </div>
+        </div>
+    </div>
+
+</div>

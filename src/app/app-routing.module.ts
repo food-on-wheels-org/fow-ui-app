@@ -9,7 +9,7 @@ const routes: Routes = [
       import('./restaurant-listing/restaurant-listing.module').then(
         (m) => m.RestaurantListingModule
       ),
-  },
+  }
 ];
 
 @NgModule({
