@@ -1,3 +1,45 @@
+.order-placed-message {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.35); /* Dull/darken the background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.order-placed-dialog {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+  padding: 32px 28px;
+  text-align: center;
+  min-width: 320px;
+  min-height: 80px;
+}
+
+.order-placed-message h2 {
+  margin-top: 0;
+  color: #228B22;
+}
+
+.close-button {
+  margin-top: 18px;
+  background: #CF0202;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.close-button:hover {
+  background: #a80101;
+}
 .order-summary-table-container {
   max-width: 600px;
   margin: 40px auto;
@@ -48,19 +90,6 @@
 
 .place-order-button:hover {
   background: #a80101;
-}
-
-.order-placed-message {
-  margin-top: 24px;
-  background: #e7ffe7;
-  border: 1px solid #4caf50;
-  border-radius: 8px;
-  padding: 18px 12px;
-  color: #228B22;
-  font-size: 1.2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .close-button {

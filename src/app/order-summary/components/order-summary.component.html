@@ -28,9 +28,11 @@
     <button class="place-order-button" (click)="saveOrder()">Place Order</button>
 
     <div *ngIf="isOrderPlaced" class="order-placed-message">
-        <h2>Order placed!</h2>
-        <p>Your order has been successfully placed.</p>
-        <button class="close-button" (click)="closeDialog()">Close</button>
+        <div class="order-placed-dialog">
+            <h2>Order placed!</h2>
+            <p>Your order has been successfully placed.</p>
+            <button class="close-button" (click)="closeDialog()">Close</button>
+        </div>
     </div>
 
 </div>
