@@ -1,0 +1,36 @@
+<div class="order-summary-table-container">
+    <h1>Order Summary</h1>
+    <table class="order-summary-table">
+        <thead>
+        <tr>
+            <th>Item</th>
+            <th>Quantity</th>
+            <th>Price</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let item of orderSummaryObj.menuItemList">
+            <td>{{ item.dishName }}</td>
+            <td>{{ item.quantity }}</td>
+            <td>$ {{ item.price }}</td>
+        </tr>
+        <tr class="total-row">
+            <td colspan="2" style="text-align: right;"><strong>Total</strong></td>
+            <td>
+                <strong>
+                    $ {{ total }}
+                </strong>
+            </td>
+        </tr>
+        
+        </tbody>
+    </table>
+    <button class="place-order-button" (click)="saveOrder()">Place Order</button>
+
+    <div *ngIf="isOrderPlaced" class="order-placed-message">
+        <h2>Order placed!</h2>
+        <p>Your order has been successfully placed.</p>
+        <button class="close-button" (click)="closeDialog()">Close</button>
+    </div>
+
+</div>

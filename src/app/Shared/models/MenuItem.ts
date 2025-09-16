@@ -1,4 +1,4 @@
-export class MenuItem{
+export interface MenuItem{
     id?: number;
     dishName?: string;
     dishDescription?: string;
