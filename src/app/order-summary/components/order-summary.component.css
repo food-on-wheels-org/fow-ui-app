@@ -1,0 +1,80 @@
+.order-summary-table-container {
+  max-width: 600px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 32px 24px;
+  text-align: center;
+}
+
+.order-summary-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 24px;
+}
+
+.order-summary-table th,
+.order-summary-table td {
+  padding: 12px 8px;
+  border-bottom: 1px solid #eee;
+  font-size: 1.1rem;
+}
+
+.order-summary-table th {
+  background: #CF0202;
+  color: #fff;
+  font-weight: 600;
+}
+
+.order-summary-table .total-row td {
+  border-bottom: none;
+  font-size: 1.15rem;
+  color: #CF0202;
+}
+
+.place-order-button {
+  background: #CF0202;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 32px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 12px;
+  transition: background 0.2s;
+}
+
+.place-order-button:hover {
+  background: #a80101;
+}
+
+.order-placed-message {
+  margin-top: 24px;
+  background: #e7ffe7;
+  border: 1px solid #4caf50;
+  border-radius: 8px;
+  padding: 18px 12px;
+  color: #228B22;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.close-button {
+  margin-top: 12px;
+  background: #CF0202;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.close-button:hover {
+  background: #a80101;
+}
