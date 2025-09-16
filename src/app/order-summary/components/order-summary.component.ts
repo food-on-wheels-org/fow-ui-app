@@ -41,6 +41,7 @@ export class OrderSummaryComponent {
   }
 
   closeDialog() {
+    this.isOrderPlaced = false;
     this.router.navigate(['/']);
   }
 
