@@ -1,7 +1,7 @@
 import { MenuItem } from "./MenuItem";
 import { Restaurant } from "./Restaurant";
 
-export class MenuDirectoryPage {
+export interface MenuDirectoryPage {
     menuItemList?: MenuItem[];
     restaurantListing?: Restaurant;
 }
