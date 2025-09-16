@@ -12,6 +12,7 @@
 .header-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   font-size: 1.25rem;
   font-weight: 500;
 }
@@ -19,9 +20,11 @@
 .header-logo-text {
   color: #fff;
   padding-left: 20px;
+  align-items: center;
 }
 
 .header-logo-image {
   padding-top: 10px;
   border-radius: 50%;
+  align-items: center;
 }
