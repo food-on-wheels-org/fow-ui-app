@@ -1,13 +1,13 @@
 import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { catchError, throwError } from "rxjs";
-import { API_URL_MDIR } from "src/constants/url";
+import { K8_EXTERNAL_IP } from "src/constants/url";
 
 @Injectable({
   providedIn: 'root'
 })
 export class MenuItemService {
-    private api_url = API_URL_MDIR + '/menuDirectory/fetchRestaurantAndMenuById/';
+    private api_url = K8_EXTERNAL_IP + '/menuDirectory/fetchRestaurantAndMenuById/';
 
     constructor(private http:HttpClient) { }
 

@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http'; // <-- Import here
-import { API_URL_ORDER_SUMMARY } from 'src/constants/url';
+import { K8_EXTERNAL_IP } from 'src/constants/url';
 import { catchError } from 'rxjs/operators';
 import { Observable, throwError } from 'rxjs';
 
@@ -8,7 +8,7 @@ import { Observable, throwError } from 'rxjs';
     providedIn: 'root'
 })
 export class OrderService {
-    private saveOrderUrl = API_URL_ORDER_SUMMARY + '/order/saveFoodOrder';
+    private saveOrderUrl = K8_EXTERNAL_IP + '/order/saveFoodOrder';
 
     constructor(private http: HttpClient) { }
 
