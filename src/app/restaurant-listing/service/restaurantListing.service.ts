@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { API_URL_RLIST } from 'src/constants/url';
+import { K8_EXTERNAL_IP } from 'src/constants/url';
 import { catchError } from 'rxjs/operators';
 import { Observable, throwError } from 'rxjs';
 
@@ -8,7 +8,7 @@ import { Observable, throwError } from 'rxjs';
 	providedIn: 'root'
 })
 export class RestaurantListingService {
-    private fetchAllRestaurantsUrl = API_URL_RLIST + '/restaurant/fetchAllRestaurants';
+    private fetchAllRestaurantsUrl = K8_EXTERNAL_IP + '/restaurant/fetchAllRestaurants';
 
 	constructor(private http: HttpClient) {}
 
