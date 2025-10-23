@@ -2,6 +2,20 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.12.
 
+## Overview
+- Displays restaurants, menus, and order workflows.  
+- Consumes backend REST APIs exposed through AWS ALB.
+
+
+## Tech Stack
+Angular 15, TypeScript, HTML, CSS
+
+
+## Deployment
+- Built and containerized: `tejassrivathsa/fow-ui-app:latest`  
+- Deployed on AWS EKS through ArgoCD.  
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
